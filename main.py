@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import *
-import random
+from random import randrange
 
 # Initializing game
 pygame.init()
@@ -45,7 +45,7 @@ while True:
     horizontal_var = 0
     all_positions_headsk = [0, 0]
     score = 3
-    appel_posx, appel_posy = random.randrange(0, 470, 10), random.randrange(0, 590, 10)
+    appel_posx, appel_posy = randrange(0, 470, 10), randrange(0, 590, 10)
     background.fill(black)
 
     # Creating the first appel
@@ -128,8 +128,8 @@ while True:
 
         # Create a red appel randomly on the screen
         if headsk_x == appel_posx and headsk_y == appel_posy:
-            appel_posx = random.randrange(0, 470, 10)
-            appel_posy = random.randrange(0, 590, 10)
+            appel_posx = randrange(0, 470, 10)
+            appel_posy = randrange(0, 590, 10)
             background.fill(black)
             score += 1
             sprite_appel = pygame.Rect(appel_posx, appel_posy, 10, 10)
