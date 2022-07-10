@@ -35,7 +35,7 @@ def check_4loose(all_positions_player, sk_he_x, sk_he_y, points):
         if sk_he_x < -10 or sk_he_x > 480 or sk_he_y < -10 or sk_he_y > 600:
             return False
 
-        return True
+    return True
 
 
 while True:
